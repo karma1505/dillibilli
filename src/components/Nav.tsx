@@ -1,6 +1,6 @@
-'use client'
-
-import { useState } from 'react'
+"use client";
+import * as HeroIconsOutline from '@heroicons/react/outline';
+import { useState } from 'react';
 import {
     Dialog,
     DialogPanel,
@@ -11,31 +11,20 @@ import {
     PopoverButton,
     PopoverGroup,
     PopoverPanel,
-} from '@headlessui/react'
-import {
-    ArrowPathIcon,
-    Bars3Icon,
-    ChartPieIcon,
-    CursorArrowRaysIcon,
-    FingerPrintIcon,
-    SquaresPlusIcon,
-    XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+} from '@headlessui/react';
 
 const Rooms = [
-    { name: 'Golden', description: 'Get a better understanding of your traffic', href: '/golden', icon: ChartPieIcon },
-    { name: 'Silver', description: 'Speak directly to your customers', href: '/silver', icon: CursorArrowRaysIcon },
-    { name: 'Bronze', description: 'Your customers’ data will be safe and secure', href: '/bronze', icon: FingerPrintIcon },
-]
-
+    { name: 'Golden', description: 'Luxurious Golden Interiors, Forest Views, Jacuzzi.', href: '/golden' },
+    { name: 'Silver', description: 'Chic Silver Bedroom, Luxurious Vibe, Stunning Views', href: '/silver' },
+    { name: 'Bronze', description: 'Private Ground Floor Room With Valley Views & Sofa-cum-Bed', href: '/bronze' },
+];
 
 export default function Nav() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="bg-white border-b-4 fixed border-amber-100 fixed  top-0 left-0 w-full z-50 shadow-sm shadow-amber-100">
-            <nav aria-label="Global" className="mx-auto shadow-2 w-full  border-amber-100 flex max-w-full items-center justify-between px-5 lg:px-8">
+        <header className="bg-white border-b-4 fixed top-0 left-0 w-full z-50 shadow-md">
+            <nav aria-label="Global" className="mx-auto w-full flex max-w-full items-center justify-between px-5 lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
@@ -49,7 +38,7 @@ export default function Nav() {
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+                        <HeroIconsOutline.MenuIcon aria-hidden="true" className="h-6 w-6" />
                     </button>
                 </div>
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
@@ -58,13 +47,12 @@ export default function Nav() {
                     </a>
                     <Popover className="relative">
                         <PopoverButton className="flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
-                            Rooms
-                            <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
+                            Our Rooms
+                            <HeroIconsOutline.ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
                         </PopoverButton>
 
                         <PopoverPanel
-                            transition
-                            className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+                            className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition-all"
                         >
                             <div className="p-4">
                                 {Rooms.map((item) => (
@@ -73,7 +61,7 @@ export default function Nav() {
                                         className="group relative flex items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50"
                                     >
                                         <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                            <item.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" />
+                                            {/* Icon placeholder */}
                                         </div>
                                         <div className="flex-auto">
                                             <a href={item.href} className="block font-semibold text-gray-900">
@@ -85,7 +73,6 @@ export default function Nav() {
                                     </div>
                                 ))}
                             </div>
-
                         </PopoverPanel>
                     </Popover>
 
@@ -97,8 +84,10 @@ export default function Nav() {
                     </a>
                 </PopoverGroup>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="text-md font-semibold leading-6 text-gray-900">
-                        Book Now <span aria-hidden="true">&rarr;</span>
+                    <a href="https://www.makemytrip.com/hotels/dilli_villa_3bhk_swimming_pool_jacuzzi_and_home_theatre-details-kasauli.html" className="text-md font-semibold leading-6 text-gray-900">
+                        <button style={{ backgroundColor: '#38322f' }} className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white hover:bg-[#38322f] focus:outline-none focus:border-[#38322f] focus:shadow-outline-[#38322f] active:bg-[#38322f] transition ease-in-out duration-150">
+                            Book Now
+                        </button>
                     </a>
                 </div>
             </nav>
@@ -108,11 +97,7 @@ export default function Nav() {
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                            <img
-                                alt=""
-                                src="/logo.svg"
-                                className="h-16 py-0 w-auto"
-                            />
+                            <img alt="" src="/logo.svg" className="h-16 py-0 w-auto" />
                         </a>
                         <button
                             type="button"
@@ -120,7 +105,7 @@ export default function Nav() {
                             className="-m-2.5 rounded-md p-2.5 text-gray-700"
                         >
                             <span className="sr-only">Close menu</span>
-                            <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+                            <HeroIconsOutline.XIcon aria-hidden="true" className="h-6 w-6" />
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
@@ -135,7 +120,7 @@ export default function Nav() {
                                 <Disclosure as="div" className="-mx-3">
                                     <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                                         Rooms
-                                        <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
+                                        <HeroIconsOutline.ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
                                     </DisclosureButton>
                                     <DisclosurePanel className="mt-2 space-y-2">
                                         {[...Rooms].map((item) => (
@@ -169,7 +154,9 @@ export default function Nav() {
                                     href="#"
                                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
-                                    Book Now
+                                    <button style={{ backgroundColor: '#38322f' }} className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white hover:bg-[#38322f] focus:outline-none focus:border-[#38322f] focus:shadow-outline-[#38322f] active:bg-[#38322f] transition ease-in-out duration-150">
+                                        Book Now
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -177,5 +164,5 @@ export default function Nav() {
                 </DialogPanel>
             </Dialog>
         </header>
-    )
+    );
 }

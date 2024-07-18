@@ -11,6 +11,9 @@ import Travel from "@/components/Travel";
 
 import ImageGallery from "@/components/ImageGal";
 import Story from "@/components/Story";
+import AmenitiesCard from "@/components/AmenitiesCard";
+
+
 
 
 export default function Home() {
@@ -21,11 +24,13 @@ export default function Home() {
           <ImageGallery />
         </div>
         <Story />
+        <AmenitiesCard />
         <Room />
         <Travel />
         <Review />
         <Map />
         <Footer />
+
       </div>
     </>
   );

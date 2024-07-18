@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
@@ -15,22 +15,23 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
     const [selected, setSelected] = useState<Card | null>(null);
     const [lastSelected, setLastSelected] = useState<Card | null>(null);
 
-    const handleClick = (card: Card) => {
+    const handleHover = (card: Card) => {
         setLastSelected(selected);
         setSelected(card);
     };
 
-    const handleOutsideClick = () => {
+    const handleMouseLeave = () => {
         setLastSelected(selected);
         setSelected(null);
     };
 
     return (
-        <div className="w-full h-full p-10 lg:p-16 grid grid-cols-1 md:grid-cols-3  max-w-8xl mx-auto gap-4 relative">
+        <div className="w-full h-full p-10 lg:p-32 grid md:grid-cols-3 grid-cols-2 max-w-8xl mx-auto gap-4 relative">
             {cards.map((card, i) => (
                 <div key={i} className={cn(card.className, "")}>
                     <motion.div
-                        onClick={() => handleClick(card)}
+                        onMouseEnter={() => handleHover(card)}
+                        onMouseLeave={handleMouseLeave}
                         className={cn(
                             card.className,
                             "relative overflow-hidden",
@@ -48,7 +49,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
                 </div>
             ))}
             <motion.div
-                onClick={handleOutsideClick}
+                onClick={handleMouseLeave}
                 className={cn(
                     "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-10",
                     selected?.id ? "pointer-events-auto" : "pointer-events-none"
@@ -69,7 +70,7 @@ const BlurImage = ({ card }: { card: Card }) => {
             onLoad={() => setLoaded(true)}
             className={cn(
                 "object-cover object-top absolute inset-0 h-full w-full transition duration-200",
-                loaded ? "blur-none" : "blur-md"
+                loaded ? "blur-none" : "blur-sm"
             )}
             alt="thumbnail"
         />
@@ -106,5 +107,5 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
                 {selected?.content}
             </motion.div>
         </div>
-    );
+    );
 };

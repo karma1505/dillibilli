@@ -6,7 +6,7 @@ export function Review() {
     return (
         <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
 
-            <div className="m-20"><h1 className="text-black text-3xl lg:text-5xl font-extrabold ">Testimonials</h1></div>
+            <div className="m-20"><h1 className="text-black text-3xl lg:text-5xl ">What Our Guests Say</h1></div>
             <InfiniteMovingCards
                 className=""
                 items={testimonials}
