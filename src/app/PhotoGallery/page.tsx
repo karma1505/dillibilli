@@ -1,9 +1,14 @@
-"use client";
 import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const sections = [
+interface Section {
+    title: string;
+    features?: string[];
+    images: string[];
+}
+
+const sections: Section[] = [
     { 
         title: 'Dining Area', 
         images: ['/dining.jpg'] 
@@ -29,16 +34,15 @@ const sections = [
     },
 ];
 
-const PhotoGallery = () => {
+const PhotoGallery: React.FC = () => {
     const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
     useEffect(() => {
         const handleScroll = () => {
             const headings = document.querySelectorAll('.sticky-heading');
-            const sections = sectionRefs.current;
 
-            sections.forEach((section, index) => {
-                const rect = section?.getBoundingClientRect();
+            sectionRefs.current.forEach((sectionRef, index) => {
+                const rect = sectionRef?.getBoundingClientRect();
                 if (rect && rect.top < window.innerHeight && rect.bottom > 0) {
                     headings.forEach(heading => heading.classList.remove('active'));
                     if (headings[index]) {
@@ -56,7 +60,6 @@ const PhotoGallery = () => {
 
     return (
         <div className="flex max-w-screen-xl mx-auto px-4 py-8 mt-16">
-            {/* Right Side - Images */}
             <div className="w-full lg:w-3/4">
                 {sections.map((section, index) => (
                     <div key={index} ref={el => sectionRefs.current[index] = el} className="mb-8">
