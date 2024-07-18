@@ -25,8 +25,8 @@ function Room() {
                             The <span className="text-golden" style={{ color: '#FFD700' }}>Golden</span> Room
                         </h5>
                         <p className="mb-3 font-normal text-gray-800 dark:text-gray-400">
-                            Enjoy the Golden Bedroom's plush interiors and private pool. Sunbathe in winter, relax in the en suite jacuzzi, and revel in your private, jungle-surrounded villa for a luxurious retreat.
-                        </p>
+  Enjoy the Golden Bedroom&apos;s plush interiors and private pool. Sunbathe in winter, relax in the en suite jacuzzi, and revel in your private, jungle-surrounded villa for a luxurious retreat.
+</p>
                     </div>
                 </Link>
 

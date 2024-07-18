@@ -106,7 +106,7 @@ const SkeletonTwo = () => {
             <p className="text-base text-white"></p>
             <p className="text-base my-4 max-w-lg text-neutral-200">
                 Perched high above the world, this house offers breathtaking views and a
-                unique living experience. It's a place where the sky meets home,
+                unique living experience.  a place where the sky meets home,
                 and tranquility is a way of life.
             </p>
         </div>
@@ -119,7 +119,7 @@ const SkeletonThree = () => {
             <p className="text-4xl text-white">Greens all over</p>
             <p className="text-base text-white"></p>
             <p className="text-base my-4 max-w-lg text-neutral-200">
-                A house surrounded by greenery and nature's beauty. It's the
+                A house surrounded by greenery and nature beauty. the
                 perfect place to relax, unwind, and enjoy life.
             </p>
         </div>
@@ -132,7 +132,7 @@ const SkeletonFour = () => {
             <p className="text-4xl text-white">Rivers are serene</p>
             <p className="text-base text-white"></p>
             <p className="text-base my-4 max-w-lg text-neutral-200">
-                A house by the river is a place of peace and tranquility. It's the
+                A house by the river is a place of peace and tranquility. the
                 perfect place to relax, unwind, and enjoy life.
             </p>
         </div>
