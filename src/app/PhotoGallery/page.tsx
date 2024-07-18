@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -9,6 +7,7 @@ interface Section {
     features?: string[];
     images: string[];
 }
+
 
 const sections: Section[] = [
     { 
@@ -37,7 +36,7 @@ const sections: Section[] = [
 ];
 
 const PhotoGallery: React.FC = () => {
-    const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+    const sectionRefs = useRef<HTMLDivElement[]>(Array(sections.length).fill(null));
 
     useEffect(() => {
         const handleScroll = () => {
