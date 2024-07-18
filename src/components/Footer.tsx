@@ -1,7 +1,8 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 
-function Footer() {
+const Footer: React.FC = () => {
     return (
         <div>
             <footer id='footer' style={{ backgroundColor: '#38322f' }} className="w-full shadow p-4 text-center mt-auto z-50 font-montserrat">
@@ -9,7 +10,9 @@ function Footer() {
                     {/* Logo Section */}
                     <div className="mb-6">
                         <a href="/" className="inline-block">
-                            <img src="/demo1.png" className="h-24 lg:h-40 mx-auto" alt="Logo" />
+                            <div className="relative w-40 h-40 mx-auto">
+                                <Image src="/demo1.png" layout="fill" objectFit="contain" alt="Logo" />
+                            </div>
                         </a>
                     </div>
                     
@@ -28,6 +31,8 @@ function Footer() {
                             <a href="tel:+911234567890" className="hover:underline">Contact Us</a>
                         </li>
                     </ul>
+                    
+                    {/* Contact Information */}
                     <div className="mb-2 mt-6">
                         <a href="tel:+911234567890" className="block text-sm text-white sm:text-center dark:text-white hover:underline">+91 1234567890</a>
                         <a href="mailto:info@dillihouse.com" className="block text-sm text-white sm:text-center dark:text-white hover:underline">info@dillihouse.com</a>

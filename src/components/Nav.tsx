@@ -1,6 +1,7 @@
 "use client";
 import * as HeroIconsOutline from '@heroicons/react/outline';
 import { useState } from 'react';
+import Image from 'next/image';
 import {
     Dialog,
     DialogPanel,
@@ -28,7 +29,7 @@ export default function Nav() {
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
-                        <img alt="" src="/logo.svg" className="h-20 w-auto" />
+                        <Image alt="Logo" src="/logo.svg" width={80} height={80} className="h-20 w-auto" />
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -97,7 +98,7 @@ export default function Nav() {
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                            <img alt="" src="/logo.svg" className="h-16 py-0 w-auto" />
+                            <Image alt="Logo" src="/logo.svg" width={64} height={64} className="h-16 py-0 w-auto" />
                         </a>
                         <button
                             type="button"
