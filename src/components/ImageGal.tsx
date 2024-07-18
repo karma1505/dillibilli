@@ -17,7 +17,7 @@ const media: MediaItem[] = [
   { type: 'image', src: '/kitchen.JPG', alt: 'The Dilli House', title: 'Dine At The Royal Kitchen Of Dilli House', subtitle: 'With Ranging Over From 5 Different Cuisine Styles' },
   { type: 'image', src: '/pool2.jpg', alt: 'The pool view', title: 'The Pool', subtitle: 'Experience The Serene Ambiance Of Our Pool At The Golden Hour.' },
   { type: 'image', src: '/outdoor.jpg', alt: 'Outdoor Sitting', title: 'Veranda Retreat', subtitle: 'Perfect for BBQ, Music, And Fun Activities.' },
-  { type: 'video', src: '/videovilla.mp4', alt: 'The Dilli House Experience' }
+  { type: 'video', src: '/videovilla.mp4', alt: 'The Dilli House Experience'}
 ];
 
 const ImageGallery: React.FC = () => {
