@@ -1,98 +1,99 @@
 "use client";
 
 import React from 'react';
-import { XIcon } from '@heroicons/react/outline';
-import {
-    WifiIcon,
-    FireIcon,
-    DeviceMobileIcon,
-    SparklesIcon,
-    UserGroupIcon,
-    BookOpenIcon,
-    GlobeAltIcon,
-    ShieldCheckIcon,
-    MusicNoteIcon,
-    DeviceTabletIcon,
-    DocumentTextIcon,
-    BriefcaseIcon,
-    CubeIcon,
-    SunIcon,
-    UsersIcon,
-    TruckIcon,
-    CakeIcon,
-    LightBulbIcon,
-} from '@heroicons/react/outline';
 
+type Amenity = {
+    name: string;
+};
 
-const allAmenities = {
+type Amenities = {
+    'Scenic views': Amenity[];
+    'Bathroom': Amenity[];
+    'Bedroom and laundry': Amenity[];
+    'Entertainment': Amenity[];
+    'Heating and cooling': Amenity[];
+    'Home safety': Amenity[];
+    'Internet and office': Amenity[];
+    'Kitchen and dining': Amenity[];
+    'Outdoor': Amenity[];
+    'Parking and facilities': Amenity[];
+    'Services': Amenity[];
+    'Not included': Amenity[];
+};
+
+const allAmenities: Amenities = {
     'Scenic views': [
-        { name: 'Mountain view', icon: SunIcon },
-        { name: 'Valley view', icon: GlobeAltIcon }
+        { name: 'Mountain view' },
+        { name: 'Valley view' }
     ],
     Bathroom: [
-        { name: 'Bath', icon: SparklesIcon },
-        { name: 'Hair dryer', icon: FireIcon },
-        { name: 'Shampoo', icon: DocumentTextIcon },
-        { name: 'Conditioner', icon: DocumentTextIcon },
-        { name: 'Body soap', icon: CubeIcon },
-        { name: 'Bidet', icon: DeviceTabletIcon },
-        { name: 'Hot water', icon: FireIcon },
-        { name: 'Shower gel', icon: SparklesIcon }
+        { name: 'Bath' },
+        { name: 'Hair dryer' },
+        { name: 'Shampoo' },
+        { name: 'Conditioner' },
+        { name: 'Body soap' },
+        { name: 'Bidet' },
+        { name: 'Hot water' },
+        { name: 'Shower gel' }
     ],
     'Bedroom and laundry': [
-        { name: 'Washing machine', icon: DeviceTabletIcon },
-        { name: 'Essentials', icon: BriefcaseIcon },
-        { name: 'Towels, bed sheets, soap and toilet paper', icon: BriefcaseIcon },
-        { name: 'Hangers', icon: UserGroupIcon },
-        { name: 'Bed linen', icon: BriefcaseIcon },
-        { name: 'Extra pillows and blankets', icon: CubeIcon },
-        { name: 'Room-darkening blinds', icon: SunIcon },
-        { name: 'Iron', icon: WifiIcon },
-        { name: 'Clothes storage', icon: TruckIcon }
+        { name: 'Washing machine' },
+        { name: 'Essentials' },
+        { name: 'Towels, bed sheets, soap and toilet paper' },
+        { name: 'Hangers' },
+        { name: 'Bed linen' },
+        { name: 'Extra pillows and blankets' },
+        { name: 'Room-darkening blinds' },
+        { name: 'Iron' },
+        { name: 'Clothes storage' }
     ],
     Entertainment: [
-        { name: 'TV', icon: WifiIcon },
-        { name: 'Exercise equipment', icon: DeviceMobileIcon },
-        { name: 'Pool table', icon: WifiIcon },
-        { name: 'Books and reading material', icon: BookOpenIcon }
+        { name: 'TV' },
+        { name: 'Exercise equipment' },
+        { name: 'Pool table' },
+        { name: 'Books and reading material' }
     ],
     'Heating and cooling': [
-        { name: 'Air conditioning', icon: SunIcon },
-        { name: 'Ceiling fan', icon: SunIcon },
-        { name: 'Heating', icon: FireIcon }
+        { name: 'Air conditioning' },
+        { name: 'Ceiling fan' },
+        { name: 'Heating' }
     ],
     'Home safety': [
-        { name: 'Exterior security cameras on property', icon: ShieldCheckIcon },
-        { name: 'Fire extinguisher', icon: WifiIcon },
-        { name: 'First aid kit', icon: BriefcaseIcon }
+        { name: 'Exterior security cameras on property' },
+        { name: 'Fire extinguisher' },
+        { name: 'First aid kit' }
     ],
     'Internet and office': [
-        { name: 'Wifi', icon: WifiIcon },
-        { name: 'Dedicated workspace', icon: BriefcaseIcon }
+        { name: 'Wifi' },
+        { name: 'Dedicated workspace' }
     ],
     'Kitchen and dining': [
-        { name: 'Kitchen', icon: WifiIcon },
-        { name: 'Space where guests can cook their own meals', icon: WifiIcon }
+        { name: 'Kitchen' },
+        { name: 'Space where guests can cook their own meals' }
     ],
     Outdoor: [
-        { name: 'Firepit', icon: FireIcon },
-        { name: 'Outdoor dining area', icon: UserGroupIcon },
-        { name: 'BBQ grill', icon: SparklesIcon }
+        { name: 'Firepit' },
+        { name: 'Outdoor dining area' },
+        { name: 'BBQ grill' }
     ],
     'Parking and facilities': [
-        { name: 'Free parking on premises', icon: WifiIcon },
-        { name: 'Pool', icon: WifiIcon },
-        { name: 'Hot tub', icon: WifiIcon }
+        { name: 'Free parking on premises' },
+        { name: 'Pool' },
+        { name: 'Hot tub' }
     ],
     Services: [
-        { name: 'Smoking allowed', icon: FireIcon }
+        { name: 'Smoking allowed' }
     ],
     'Not included': [
-        { name: 'Unavailable: Dryer', icon: ShieldCheckIcon }
+        { name: 'Unavailable: Dryer' }
     ]
 };
 
-const AllAmenitiesPopover = ({ onClose }) => {
+type AllAmenitiesPopoverProps = {
+    onClose: () => void;
+};
+
+const AllAmenitiesPopover: React.FC<AllAmenitiesPopoverProps> = ({ onClose }) => {
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
             <div className="relative bg-white rounded-lg shadow-lg w-11/12 max-w-2xl h-3/5 overflow-y-auto">
@@ -101,7 +102,9 @@ const AllAmenitiesPopover = ({ onClose }) => {
                         onClick={onClose}
                         className="text-gray-500 hover:text-gray-700"
                     >
-                        <XIcon className="h-6 w-6" />
+                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
                     </button>
                 </div>
                 <div className="p-6">
@@ -109,15 +112,11 @@ const AllAmenitiesPopover = ({ onClose }) => {
                         <div key={category} className="mb-4">
                             <h3 className="text-xl font-semibold mb-2 capitalize">{category.replace(/([A-Z])/g, ' $1').trim()}</h3>
                             <ul className="grid grid-cols-2 gap-4">
-                                {allAmenities[category].map((amenity, index) => {
-                                    const Icon = amenity.icon;
-                                    return (
-                                        <li key={index} className="flex items-center space-x-2">
-                                            <Icon className="h-5 w-5 text-gray-500" />
-                                            <span>{amenity.name}</span>
-                                        </li>
-                                    );
-                                })}
+                                {allAmenities[category as keyof Amenities].map((amenity, index) => (
+                                    <li key={index} className="flex items-center space-x-2">
+                                        <span>{amenity.name}</span>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     ))}

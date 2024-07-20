@@ -1,18 +1,15 @@
+import { PluginAPI } from 'tailwindcss/types/config';
 const flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette").default;
 
 // /** @type {import('tailwindcss').Config} */
 
-function addVariablesForColors({ addBase, theme }) {
+function addVariablesForColors({ addBase, theme }: PluginAPI) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
 
-  addBase({
-    ":root": newVars,
-  });
 }
-
 module.exports = {
   content: [
     "./node_modules/flowbite/**/*.{js,ts,jsx,tsx}",
