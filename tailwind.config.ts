@@ -1,7 +1,7 @@
 import { PluginAPI } from 'tailwindcss/types/config';
 const flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette").default;
 
-// /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 
 function addVariablesForColors({ addBase, theme }: PluginAPI) {
   let allColors = flattenColorPalette(theme("colors"));
@@ -41,8 +41,8 @@ module.exports = {
       },
       fontFamily: {
         alike: ['Alike', 'serif'],
-        poppins: ['Poppins','sans-serif'],
-        montserrat: ['Montserrat','sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -11,11 +11,11 @@ const Footer: React.FC = () => {
                     <div className="mb-6">
                         <a href="/" className="inline-block">
                             <div className="relative w-40 h-40 mx-auto">
-                                <Image src="/demo1.png" layout="fill" objectFit="contain" alt="Logo" />
+                                <Image src="/logo.png" layout="fill" objectFit="contain" alt="Logo" />
                             </div>
                         </a>
                     </div>
-                    
+
                     {/* Navigation Links */}
                     <ul className="flex justify-center space-x-6 mb-6 text-lg text-white dark:text-gray-400">
                         <li className="flex-1 text-center">
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                             <a href="tel:+911234567890" className="hover:underline">Contact Us</a>
                         </li>
                     </ul>
-                    
+
                     {/* Contact Information */}
                     <div className="mb-2 mt-6">
                         <a href="tel:+911234567890" className="block text-sm text-white sm:text-center dark:text-white hover:underline">+91 1234567890</a>

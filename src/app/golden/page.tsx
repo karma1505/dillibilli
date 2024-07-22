@@ -11,17 +11,17 @@ const BronzeRoom = () => {
             <div className=" ">
                 <h1 className="text-black dark:text-white text-3xl lg:text-5xl font-normal text-center m-20">The Golden Bedroom</h1>
                 <p className="text-sm md:text-xl lg:text-2xl font-normal mb-6 text-center m-20 sm:m-1">
-                The Master’s Bedroom offers a beautiful view of the Reserved
-Forest, a lucky guest maybe able to spot the varied wildlife of
-Himalayas.
-The name Golden Bedroom is not only relevant to the plush
-Golden interiors, but also to the Sunshine that illuminates the
-room during winters, you would have heard of bone chilling
-winter, how about therapeutic bone warming sunbaths on the
-longer in this room.
-The connected en suite houses the Couple Jacuzzi for a
-relaxing warm massage in the tranquil environs of the Jungle
-Surrounded Villa
+                    The Master’s Bedroom offers a beautiful view of the Reserved
+                    Forest, a lucky guest maybe able to spot the varied wildlife of
+                    Himalayas.
+                    The name Golden Bedroom is not only relevant to the plush
+                    Golden interiors, but also to the Sunshine that illuminates the
+                    room during winters, you would have heard of bone chilling
+                    winter, how about therapeutic bone warming sunbaths on the
+                    longer in this room.
+                    The connected en suite houses the Couple Jacuzzi for a
+                    relaxing warm massage in the tranquil environs of the Jungle
+                    Surrounded Villa
                 </p>
             </div>
 

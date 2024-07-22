@@ -11,15 +11,15 @@ const SilverRoom = () => {
             <div className=" ">
                 <h1 className="text-black dark:text-white text-3xl lg:text-5xl font-normal text-center m-20">The Silver Bedroom</h1>
                 <p className="text-sm md:text-xl lg:text-2xl font-normal mb-6 text-center m-20 sm:m-1">
-                The Place for youth, the subtle selection of Grey and Black elements in the
-room give it a chic and luxurious vibe. The beaming turquoise recliner stands
-out for those looking for hugging chair a to read a book, scroll through reels
-or enjoy their favorite series.
-The Silver Bedroom has a Ninety-Degree view, the lush green valley on one
-side and the Pool Deck and Roof in the front. The room has been decorated to
-create an immersion into luxury, while providing one a perfect place to “Chill”.
-If you are a writer or a poet the teak wood study table won’t let your creativity
-rest and the only noise you will be hearing will be of your thoughts.
+                    The Place for youth, the subtle selection of Grey and Black elements in the
+                    room give it a chic and luxurious vibe. The beaming turquoise recliner stands
+                    out for those looking for hugging chair a to read a book, scroll through reels
+                    or enjoy their favorite series.
+                    The Silver Bedroom has a Ninety-Degree view, the lush green valley on one
+                    side and the Pool Deck and Roof in the front. The room has been decorated to
+                    create an immersion into luxury, while providing one a perfect place to “Chill”.
+                    If you are a writer or a poet the teak wood study table won’t let your creativity
+                    rest and the only noise you will be hearing will be of your thoughts.
                 </p>
             </div>
 

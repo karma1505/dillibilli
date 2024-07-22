@@ -11,12 +11,12 @@ const BronzeRoom = () => {
             <div className=" ">
                 <h1 className="text-black dark:text-white text-3xl lg:text-5xl font-normal text-center m-20">The Bronze Bedroom</h1>
                 <p className="text-sm md:text-xl lg:text-2xl font-normal mb-6 text-center m-20 sm:m-1">
-                Located on the ground floor the room provides unmatched privacy at the property, the
-room has wonderful views of the green bleeding valley, with the Drawing Room right
-outside. Perfect for guests who want to have a party without disturbing others on the
-property.
-The room houses a Sofa-Cum-Bed perfect for 2 more people to sleep on, a late night get
-together can turn into a perfect slumber or pajama party in this room.
+                    Located on the ground floor the room provides unmatched privacy at the property, the
+                    room has wonderful views of the green bleeding valley, with the Drawing Room right
+                    outside. Perfect for guests who want to have a party without disturbing others on the
+                    property.
+                    The room houses a Sofa-Cum-Bed perfect for 2 more people to sleep on, a late night get
+                    together can turn into a perfect slumber or pajama party in this room.
                 </p>
             </div>
 

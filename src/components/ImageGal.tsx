@@ -1,6 +1,7 @@
 'use client';
 import React, { useRef, useEffect, useState } from 'react';
-import 'tailwindcss/tailwind.css';
+import Image from 'next/image';
+import '../app/globals.css'; // Ensure correct import path
 
 interface MediaItem {
   type: 'image' | 'video';
@@ -17,7 +18,7 @@ const media: MediaItem[] = [
   { type: 'image', src: '/kitchen.JPG', alt: 'The Dilli House', title: 'Dine At The Royal Kitchen Of Dilli House', subtitle: 'With Ranging Over From 5 Different Cuisine Styles' },
   { type: 'image', src: '/pool2.jpg', alt: 'The pool view', title: 'The Pool', subtitle: 'Experience The Serene Ambiance Of Our Pool At The Golden Hour.' },
   { type: 'image', src: '/outdoor.jpg', alt: 'Outdoor Sitting', title: 'Veranda Retreat', subtitle: 'Perfect for BBQ, Music, And Fun Activities.' },
-  { type: 'video', src: '/videovilla.mp4', alt: 'The Dilli House Experience'}
+  { type: 'video', src: '/videovilla.mp4', alt: 'The Dilli House Experience' }
 ];
 
 const ImageGallery: React.FC = () => {
@@ -53,7 +54,7 @@ const ImageGallery: React.FC = () => {
           >
             {item.type === 'image' ? (
               <div className="relative w-full h-full">
-                <img src={item.src} alt={item.alt} className="w-full h-full object-cover" />
+                <Image src={item.src} alt={item.alt} fill style={{ objectFit: 'cover' }} />
                 <div className="absolute inset-0 bg-black opacity-70"></div>
                 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center p-6 rounded-lg text-white font-alike">
                   <h3 className="text-xl">{item.title}</h3>

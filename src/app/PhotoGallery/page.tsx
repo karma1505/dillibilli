@@ -22,6 +22,7 @@ const PhotoGallery: React.FC = () => {
           headings.forEach(heading => heading.classList.remove('active'));
           if (headings[index]) {
             headings[index].classList.add('active');
+
           }
         }
       });
@@ -31,7 +32,7 @@ const PhotoGallery: React.FC = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [sectionRefs]);
 
   return (
     <div className="flex max-w-screen-xl mx-auto px-4 py-8 mt-16">
