@@ -18,7 +18,7 @@ const SilverRoom = () => {
                     The Silver Bedroom has a Ninety-Degree view, the lush green valley on one
                     side and the Pool Deck and Roof in the front. The room has been decorated to
                     create an immersion into luxury, while providing one a perfect place to “Chill”.
-                    If you are a writer or a poet the teak wood study table won’t let your creativity
+                    If you are a writer or a poet the teak wood study table won&apos;t let your creativity
                     rest and the only noise you will be hearing will be of your thoughts.
                 </p>
             </div>
@@ -89,12 +89,9 @@ export default SilverRoom;
 const SkeletonOne = () => {
     return (
         <div>
-            <p className="text-4xl text-white">House in the woods</p>
+            <p className="text-4xl text-white">King Size Bed</p>
             <p className="text-base text-white"></p>
-            <p className="text-base my-4 max-w-lg text-neutral-200">
-                A serene and tranquil retreat, this house in the woods offers a peaceful
-                escape from the hustle and bustle of city life.
-            </p>
+
         </div>
     );
 };
@@ -102,13 +99,9 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
     return (
         <div>
-            <p className="text-4xl text-white">House above the clouds</p>
+            <p className="text-4xl text-white">Panoramic Views</p>
             <p className="text-base text-white"></p>
-            <p className="text-base my-4 max-w-lg text-neutral-200">
-                Perched high above the world, this house offers breathtaking views and a
-                unique living experience.  a place where the sky meets home,
-                and tranquility is a way of life.
-            </p>
+
         </div>
     );
 };
@@ -116,12 +109,9 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
     return (
         <div>
-            <p className="text-4xl text-white">Greens all over</p>
+            <p className="text-4xl text-white">Teak Wood Study</p>
             <p className="text-base text-white"></p>
-            <p className="text-base my-4 max-w-lg text-neutral-200">
-                A house surrounded by greenery and nature beauty. the
-                perfect place to relax, unwind, and enjoy life.
-            </p>
+
         </div>
     );
 };
@@ -129,12 +119,9 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
     return (
         <div>
-            <p className="text-4xl text-white">Rivers are serene</p>
+            <p className="text-4xl text-white">Leather Recliner</p>
             <p className="text-base text-white"></p>
-            <p className="text-base my-4 max-w-lg text-neutral-200">
-                A house by the river is a place of peace and tranquility. the
-                perfect place to relax, unwind, and enjoy life.
-            </p>
+
         </div>
     );
 };
@@ -162,6 +149,6 @@ const cards = [
         id: 4,
         content: <SkeletonFour />,
         className: "md:col-span-2",
-        thumbnail: "/recliner.JPG"
+        thumbnail: "/recliner.jpg"
     },
 ];
