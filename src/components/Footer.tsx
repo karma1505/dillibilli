@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
                     <div className="mb-6">
                         <a href="/" className="inline-block">
                             <div className="relative w-40 h-40 mx-auto">
-                                <Image src="/logo.png" layout="fill" objectFit="contain" alt="Logo" />
+                                <Image className="object-cover" src="/logo.png" fill alt="Logo" />
                             </div>
                         </a>
                     </div>

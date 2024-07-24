@@ -23,16 +23,15 @@ const AmenitiesCard = () => {
                 <h1 className="text-black text-3xl lg:text-5xl text-center">Key Features</h1>
             </div>
             <div className="flex flex-wrap justify-center gap-x-4 gap-y-4 mb-6">
-                {amenities.slice(0, 4).map((amenity, index) => (
+                {amenities.slice(0, 5).map((amenity, index) => (
                     <Link key={index} href="/PhotoGallery">
-                        <div className="flex flex-col items-center space-y-1 cursor-pointer mx-1 my-1 transition-transform transform hover:scale-105">
+                        <div className="flex flex-col flex-auto items-center space-y-1 cursor-pointer mx-1 my-1 transition-transform transform hover:scale-105">
                             <Image
                                 src={amenity.image}
                                 alt={amenity.name}
                                 className="rounded-lg"
-                                layout="fixed"
-                                width={250}
-                                height={250}
+                                width={300}
+                                height={300}
                             />
                             <div className="flex items-center space-x-1">
                                 <span className="text-sm hover:text-gray-800">{amenity.name}</span>
