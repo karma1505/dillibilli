@@ -11,7 +11,7 @@ const BronzeRoom = () => {
             <div className=" ">
                 <h1 className="text-black dark:text-white text-3xl lg:text-5xl font-normal text-center m-20">The Golden Bedroom</h1>
                 <p className="text-sm md:text-xl lg:text-2xl font-normal mb-6 text-center m-20 sm:m-1">
-                    The Master’s Bedroom offers a beautiful view of the Reserved
+                    The Master&apos;s Bedroom offers a beautiful view of the Reserved
                     Forest, a lucky guest maybe able to spot the varied wildlife of
                     Himalayas.
                     The name Golden Bedroom is not only relevant to the plush
@@ -91,7 +91,7 @@ export default BronzeRoom;
 const SkeletonOne = () => {
     return (
         <div>
-            <p className="text-4xl text-white">King Bed & Recliner</p>
+            <p className="text-4xl text-white">King Size Bed & Recliner</p>
             <p className="text-base text-white"></p>
         </div>
     );
@@ -108,6 +108,7 @@ const SkeletonTwo = () => {
 
 const SkeletonThree = () => {
     return (
+
         <div>
             <p className="text-4xl text-white">Private Pool</p>
             <p className="text-base text-white"></p>
@@ -141,12 +142,12 @@ const cards = [
         id: 3,
         content: <SkeletonThree />,
         className: "col-span-1",
-        thumbnail: "/goldenpool.jpg"
+        thumbnail: "/goldenpool.JPG"
     },
     {
         id: 4,
         content: <SkeletonFour />,
         className: "md:col-span-2",
-        thumbnail: "/golden2.JPG"
+        thumbnail: "/golden2.jpg"
     },
 ];

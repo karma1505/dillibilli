@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 const amenities = [
     { name: 'Private Pool', image: '/goldenpool.JPG' },
-    { name: 'Leather Recliners', image: '/recliner.JPG' },
-    { name: 'Gym', image: '/gym.JPG' },
+    { name: 'Leather Recliners', image: '/recliner.jpg' },
+    { name: 'Gym', image: '/gym.jpg' },
     { name: 'Jacuzzi', image: '/goldenjacuzzi.JPG' },
     { name: 'Indoor Lounge', image: '/lounge.jpg' },
     { name: 'Kitchen', image: '/dining.jpg' },

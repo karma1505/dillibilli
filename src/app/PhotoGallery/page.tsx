@@ -106,7 +106,7 @@ const PhotoGallery: React.FC = () => {
 const sections: Section[] = [
   {
     title: 'Dining Area',
-    images: ['/dining.jpg']
+    images: ['/dining.JPG']
   },
   {
     title: 'The Golden Bedroom',
@@ -121,11 +121,11 @@ const sections: Section[] = [
   {
     title: 'The Bronze Bedroom',
     features: ['King Bed', 'Floor Mattresses', 'Sofa-cum-Bed', 'Private Balcony'],
-    images: ['/bronze.jpg', '/bronze2.jpg', '/bronze3.jpg', '/scb.jpg']
+    images: ['/bronze.jpg', '/bronze2.jpg', '/bronze3.JPG', '/scb.jpg']
   },
   {
     title: 'Additional Photos',
-    images: ['/tennis.JPG', '/droneshoot.JPG', '/gym.jpg', '/lounge.jpg']
+    images: ['/tennis.jpg', '/droneshoot.JPG', '/gym.jpg', '/lounge.jpg']
   },
 ];
 

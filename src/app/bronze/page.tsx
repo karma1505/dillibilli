@@ -142,6 +142,6 @@ const cards = [
         id: 4,
         content: <SkeletonFour />,
         className: "md:col-span-2",
-        thumbnail: "/bronze2.JPG"
+        thumbnail: "/bronze2.jpg"
     },
 ];

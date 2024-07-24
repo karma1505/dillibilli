@@ -77,8 +77,8 @@ export default function Nav() {
                         </PopoverPanel>
                     </Popover>
 
-                    <a href="#" className="text-md font-semibold leading-6 text-gray-900">
-                        Our Story
+                    <a href="#Map" className="text-md font-semibold leading-6 text-gray-900">
+                        Map
                     </a>
                     <a href="#footer" className="text-md font-semibold leading-6 text-gray-900">
                         Contact Us
@@ -113,7 +113,7 @@ export default function Nav() {
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     Home
@@ -138,13 +138,13 @@ export default function Nav() {
                                 </Disclosure>
 
                                 <a
-                                    href="#"
+                                    href="#Map"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
-                                    Our Story
+                                    Map
                                 </a>
                                 <a
-                                    href="#"
+                                    href="#Footer"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     Contact Us
@@ -152,7 +152,7 @@ export default function Nav() {
                             </div>
                             <div className="py-6">
                                 <a
-                                    href="#"
+                                    href="https://www.makemytrip.com/hotels/dilli_villa_3bhk_swimming_pool_jacuzzi_and_home_theatre-details-kasauli.html"
                                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     <button style={{ backgroundColor: '#38322f' }} className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white hover:bg-[#38322f] focus:outline-none focus:border-[#38322f] focus:shadow-outline-[#38322f] active:bg-[#38322f] transition ease-in-out duration-150">
