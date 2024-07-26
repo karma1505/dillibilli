@@ -85,7 +85,7 @@ export default function Nav() {
                     </a>
                 </PopoverGroup>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="https://www.makemytrip.com/hotels/dilli_villa_3bhk_swimming_pool_jacuzzi_and_home_theatre-details-kasauli.html" className="text-md font-semibold leading-6 text-gray-900">
+                    <a href="https://www.airbnb.co.in/rooms/1197554341027638787?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-08-01&check_out=2024-08-06&source_impression_id=p3_1721998398_P3eamoWQmSbugMxr&previous_page_section_name=1000&federated_search_id=ddbf2a4a-cc90-40c3-8a6e-baccf821fbe5" className="text-md font-semibold leading-6 text-gray-900">
                         <button style={{ backgroundColor: '#38322f' }} className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white hover:bg-[#38322f] focus:outline-none focus:border-[#38322f] focus:shadow-outline-[#38322f] active:bg-[#38322f] transition ease-in-out duration-150">
                             Book Now
                         </button>
@@ -152,7 +152,7 @@ export default function Nav() {
                             </div>
                             <div className="py-6">
                                 <a
-                                    href="https://www.makemytrip.com/hotels/dilli_villa_3bhk_swimming_pool_jacuzzi_and_home_theatre-details-kasauli.html"
+                                    href="https://www.airbnb.co.in/rooms/1197554341027638787?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-08-01&check_out=2024-08-06&source_impression_id=p3_1721998398_P3eamoWQmSbugMxr&previous_page_section_name=1000&federated_search_id=ddbf2a4a-cc90-40c3-8a6e-baccf821fbe5"
                                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     <button style={{ backgroundColor: '#38322f' }} className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white hover:bg-[#38322f] focus:outline-none focus:border-[#38322f] focus:shadow-outline-[#38322f] active:bg-[#38322f] transition ease-in-out duration-150">

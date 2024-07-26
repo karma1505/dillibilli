@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                     {/* Navigation Links */}
                     <ul className="flex justify-center space-x-6 mb-6 text-lg text-white dark:text-gray-400">
                         <li className="flex-1 text-center">
-                            <a href="https://www.makemytrip.com/hotels/dilli_villa_3bhk_swimming_pool_jacuzzi_and_home_theatre-details-kasauli.html" className="hover:underline">Book</a>
+                            <a href="https://www.airbnb.co.in/rooms/1197554341027638787?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-08-01&check_out=2024-08-06&source_impression_id=p3_1721998398_P3eamoWQmSbugMxr&previous_page_section_name=1000&federated_search_id=ddbf2a4a-cc90-40c3-8a6e-baccf821fbe5" className="hover:underline">Book</a>
                         </li>
                         <li className="flex-1 text-center">
                             <a href="#Room" className="hover:underline">Rooms</a>

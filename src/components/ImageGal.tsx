@@ -12,13 +12,13 @@ interface MediaItem {
 }
 
 const media: MediaItem[] = [
-  { type: 'image', src: '/nameplate.JPG', alt: 'The Dilli House', title: 'Your Himalayan Escape', subtitle: 'Welcome To The Dilli House' },
+  { type: 'video', src: '/videovilla.mp4', alt: 'The Dilli House Experience' },
   { type: 'image', src: '/downstairs.JPG', alt: 'The Dilli House', title: 'Unlock Your Creative Mind', subtitle: 'Try Your Hand At Poetry Or Painting' },
   { type: 'image', src: '/droneshoot.JPG', alt: 'The Dilli House', title: 'Breathtaking Views', subtitle: 'Perfect For Your Social Profiles' },
   { type: 'image', src: '/kitchen.JPG', alt: 'The Dilli House', title: 'Dine At The Royal Kitchen Of Dilli House', subtitle: 'With Ranging Over From 5 Different Cuisine Styles' },
   { type: 'image', src: '/pool2.JPG', alt: 'The pool view', title: 'The Pool', subtitle: 'Experience The Serene Ambiance Of Our Pool At The Golden Hour.' },
   { type: 'image', src: '/outdoor.jpg', alt: 'Outdoor Sitting', title: 'Veranda Retreat', subtitle: 'Perfect for BBQ, Music, And Fun Activities.' },
-  { type: 'video', src: '/videovilla.mp4', alt: 'The Dilli House Experience' }
+
 ];
 
 const ImageGallery: React.FC = () => {
@@ -45,8 +45,8 @@ const ImageGallery: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full mt-20">
-      <div className="relative overflow-hidden h-[700px] bg-black" ref={carouselRef}>
+    <div className="relative w-full  mt-20">
+      <div className="relative overflow-hidden lg:h-[700px] md:h-[500px] h-[300px] bg-black" ref={carouselRef}>
         {media.map((item, index) => (
           <div
             key={index}
@@ -55,10 +55,10 @@ const ImageGallery: React.FC = () => {
             {item.type === 'image' ? (
               <div className="relative w-full h-full">
                 <Image src={item.src} alt={item.alt} fill style={{ objectFit: 'cover' }} />
-                <div className="absolute inset-0 bg-black opacity-70"></div>
+                <div className="absolute inset-0 bg-black opacity-30"></div>
                 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center p-6 rounded-lg text-white font-alike">
-                  <h3 className="text-xl">{item.title}</h3>
-                  <p className="text-l mt-1">{item.subtitle}</p>
+                  <h3 className="text-base md:text-xl">{item.title}</h3>
+                  <p className="text-sm md:text-l mt-1">{item.subtitle}</p>
                 </div>
               </div>
             ) : (
