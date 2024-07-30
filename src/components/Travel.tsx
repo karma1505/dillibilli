@@ -31,6 +31,8 @@ function Travel() {
                         className="bg-black absolute inset-0 object-cover w-full h-full opacity-95 transition-opacity duration-4000 ease-in-out"
                         src={images[currentIndex].src}
                         alt={images[currentIndex].text}
+                        height={670}
+                        width={670}
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-4000 ease-in-out">
                         <h5 className="text-xl font-bold text-white">{images[currentIndex].text}</h5>
@@ -42,31 +44,31 @@ function Travel() {
 
     const cardData = [
         [
-            { src: 'kasuali.jpg', text: 'Kasuali' },
-            { src: 'chail.jpg', text: 'Chail' },
-            { src: 'shimla.jpg', text: 'Shimla' },
+            { src: '/kasuali.jpg', text: 'Kasuali' },
+            { src: '/chail.jpg', text: 'Chail' },
+            { src: '/shimla.jpg', text: 'Shimla' },
         ],
         [
-            { src: 'heritage_park.jpg', text: 'Mohan Meakins Heritage Park 40 mins' },
-            { src: 'heritage_park2.jpg', text: 'Mohan Meakins Heritage Park View' },
-            { src: 'heritage_park3.jpg', text: 'Heritage Park Scenery' },
+            { src: '/heritage_park.jpg', text: 'Mohan Meakins Heritage Park 40 mins' },
+            { src: '/heritage_park2.jpg', text: 'Mohan Meakins Heritage Park View' },
+            { src: '/heritage_park3.jpg', text: 'Heritage Park Scenery' },
         ],
         [
-            { src: 'dagshai_jail.jpg', text: 'Dagshai British Jail Museum 20 mins' },
-            { src: 'dagshai_jail2.jpg', text: 'Dagshai Jail Entrance' },
-            { src: 'dagshai_jail3.jpg', text: 'Inside Dagshai Jail' },
+            { src: '/dagshai_jail.jpg', text: 'Dagshai British Jail Museum 20 mins' },
+            { src: '/dagshai_jail2.jpg', text: 'Dagshai Jail Entrance' },
+            { src: '/dagshai_jail3.jpg', text: 'Inside Dagshai Jail' },
         ],
         [
-            { src: 'sanawar.jpg', text: 'Sanawar 30 mins' },
-            { src: 'sanawar2.jpg', text: 'Sanawar School' },
-            { src: 'sanawar3.jpg', text: 'Sanawar Hills' },
+            { src: '/sanawar.jpg', text: 'Sanawar 30 mins' },
+            { src: '/sanawar2.jpg', text: 'Sanawar School' },
+            { src: '/sanawar3.jpg', text: 'Sanawar Hills' },
         ],
     ];
 
     return (
         <div>
             <div className="m-20">
-                <h1 className="text-black text-2xl lg:text-5xl flex justify-center">Nearby Attractions</h1>
+                <h1 className="text-black text-2xl lg:text-6xl flex justify-center">Nearby Attractions</h1>
             </div>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mx-10 my-1'>

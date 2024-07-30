@@ -19,23 +19,24 @@ const Footer: React.FC = () => {
                     {/* Navigation Links */}
                     <ul className="flex justify-center space-x-6 mb-6 text-lg text-white dark:text-gray-400">
                         <li className="flex-1 text-center">
-                            <a href="https://www.airbnb.co.in/rooms/1197554341027638787?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-08-01&check_out=2024-08-06&source_impression_id=p3_1721998398_P3eamoWQmSbugMxr&previous_page_section_name=1000&federated_search_id=ddbf2a4a-cc90-40c3-8a6e-baccf821fbe5" className="hover:underline">Book</a>
+                            <a href="https://www.airbnb.co.in/rooms/1197554341027638787?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-08-01&check_out=2024-08-06&source_impression_id=p3_1721998398_P3eamoWQmSbugMxr&previous_page_section_name=1000&federated_search_id=ddbf2a4a-cc90-40c3-8a6e-baccf821fbe5"
+                                className=" text-xl hover:underline">Book</a>
                         </li>
                         <li className="flex-1 text-center">
-                            <a href="#Room" className="hover:underline">Rooms</a>
+                            <a href="#Room" className="text-xl hover:underline">Rooms</a>
                         </li>
                         <li className="flex-1 text-center">
-                            <a href="#Map" className="hover:underline">Maps</a>
+                            <a href="#Map" className="text-xl hover:underline">Maps</a>
                         </li>
                         <li className="flex-1 text-center">
-                            <a href="tel:+911234567890" className="hover:underline">Contact Us</a>
+                            <a href="tel:+919899852353" className="text-xl hover:underline">Contact Us</a>
                         </li>
                     </ul>
 
                     {/* Contact Information */}
                     <div className="mb-2 mt-6">
-                        <a href="tel:+911234567890" className="block text-sm text-white sm:text-center dark:text-white hover:underline">+91 1234567890</a>
-                        <a href="mailto:info@dillihouse.com" className="block text-sm text-white sm:text-center dark:text-white hover:underline">info@dillihouse.com</a>
+                        <a href="tel:+911234567890" className="block text-sm text-white sm:text-center dark:text-white hover:underline">+91 9899852353</a>
+                        <a href="mailto:info@dillihouse.com" className="block text-sm text-white sm:text-center dark:text-white hover:underline">dillihousehp@gmail.com</a>
                         <span className="block text-sm text-white sm:text-center dark:text-white">© 2024 <a href="/" className="hover:underline">Dilli House</a> All Rights Reserved.</span>
                     </div>
                 </div>

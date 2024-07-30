@@ -1,3 +1,4 @@
+import { Cinzel } from 'next/font/google';
 import { PluginAPI } from 'tailwindcss/types/config';
 const flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette").default;
 

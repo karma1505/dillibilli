@@ -57,8 +57,8 @@ const ImageGallery: React.FC = () => {
                 <Image src={item.src} alt={item.alt} fill style={{ objectFit: 'cover' }} />
                 <div className="absolute inset-0 bg-black opacity-30"></div>
                 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center p-6 rounded-lg text-white font-alike">
-                  <h3 className="text-base md:text-xl">{item.title}</h3>
-                  <p className="text-sm md:text-l mt-1">{item.subtitle}</p>
+                  <h3 className="text-base md:text-3xl">{item.title}</h3>
+                  <p className="text-sm md:text-lg mt-1">{item.subtitle}</p>
                 </div>
               </div>
             ) : (

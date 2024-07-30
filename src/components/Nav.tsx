@@ -43,11 +43,11 @@ export default function Nav() {
                     </button>
                 </div>
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-                    <a href="/" className="text-md font-semibold leading-6 text-gray-900">
+                    <a href="/" className="text-md  text-xl font-semibold leading-6 text-gray-900">
                         Home
                     </a>
                     <Popover className="relative">
-                        <PopoverButton className="flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
+                        <PopoverButton className="flex text-xl items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
                             Our Rooms
                             <HeroIconsOutline.ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
                         </PopoverButton>
@@ -77,10 +77,10 @@ export default function Nav() {
                         </PopoverPanel>
                     </Popover>
 
-                    <a href="#Map" className="text-md font-semibold leading-6 text-gray-900">
+                    <a href="#Map" className="text-md text-xl font-semibold leading-6 text-gray-900">
                         Map
                     </a>
-                    <a href="#footer" className="text-md font-semibold leading-6 text-gray-900">
+                    <a href="#footer" className="text-md text-xl font-semibold leading-6 text-gray-900">
                         Contact Us
                     </a>
                 </PopoverGroup>

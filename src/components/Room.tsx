@@ -6,7 +6,7 @@ function Room() {
     return (
         <div id='Room'>
             <div className="m-20">
-                <h1 className="text-black text-3xl lg:text-5xl  flex justify-center">Our Rooms</h1>
+                <h1 className="text-black text-3xl lg:text-6xl  flex justify-center">Our Rooms</h1>
             </div>
             <div className='flex flex-col items-center py-10 mt-10 space-y-8'>
                 <Link
@@ -24,7 +24,7 @@ function Room() {
                         />
                     </div>
                     <div className="flex flex-col justify-between p-4 leading-normal w-full md:w-1/2">
-                        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                        <h5 className="mb-2 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">
                             The <span className="text-golden" style={{ color: '#FFD700' }}>Golden</span> Room
                         </h5>
                         <p className="mb-3 font-normal text-gray-800 dark:text-gray-400">
@@ -38,10 +38,10 @@ function Room() {
                     className="relative mx-6 flex flex-col-reverse items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row lg:w-[900px] lg:h-[400px]  md:mx-4 sm:mx-2 hover:bg-orange-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
                 >
                     <div className="flex flex-col justify-between p-4 leading-normal w-full md:w-1/2">
-                        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                        <h5 className="mb-2 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">
                             The <span className="text-gray-500 " >Silver</span> Room
                         </h5>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                        <p className="mb-3  font-normal text-gray-700 dark:text-gray-400">
                             The chic Silver Bedroom boasts elegant grey and black decor, a turquoise recliner, panoramic valley and pool views, and a teak study table, perfect for writers and poets seeking ultimate comfort.
                         </p>
                     </div>
@@ -70,7 +70,7 @@ function Room() {
                         />
                     </div>
                     <div className="flex flex-col justify-between p-4 leading-normal w-full md:w-1/2">
-                        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                        <h5 className="mb-2 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">
                             The <span className="text-bronze" style={{ color: '#CD7F32' }}>Bronze</span> Room
                         </h5>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
