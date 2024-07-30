@@ -12,7 +12,7 @@ interface MediaItem {
 }
 
 const media: MediaItem[] = [
-  { type: 'video', src: '/videovilla.mp4', alt: 'The Dilli House Experience' },
+  { type: 'video', src: '/videovilla1.mp4', alt: 'The Dilli House Experience' },
   { type: 'image', src: '/downstairs.JPG', alt: 'The Dilli House', title: 'Unlock Your Creative Mind', subtitle: 'Try Your Hand At Poetry Or Painting' },
   { type: 'image', src: '/droneshoot.JPG', alt: 'The Dilli House', title: 'Breathtaking Views', subtitle: 'Perfect For Your Social Profiles' },
   { type: 'image', src: '/kitchen.JPG', alt: 'The Dilli House', title: 'Dine At The Royal Kitchen Of Dilli House', subtitle: 'With Ranging Over From 5 Different Cuisine Styles' },
@@ -28,7 +28,7 @@ const ImageGallery: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % media.length);
-    }, media[currentSlide].type === 'video' ? 10000 : 5000); // 10 seconds for video, 5 seconds for images
+    }, media[currentSlide].type === 'video' ? 20000 : 5000); // 20 seconds for video, 5 seconds for images
     return () => clearInterval(interval);
   }, [currentSlide]);
 
