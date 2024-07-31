@@ -12,7 +12,7 @@ interface MediaItem {
 }
 
 const media: MediaItem[] = [
-  { type: 'video', src: '/videovilla1.mp4', alt: 'The Dilli House Experience' },
+  { type: 'video', src: '/videovilla.mp4', alt: 'The Dilli House Experience' },
   { type: 'image', src: '/downstairs.JPG', alt: 'The Dilli House', title: 'Unlock Your Creative Mind', subtitle: 'Try Your Hand At Poetry Or Painting' },
   { type: 'image', src: '/droneshoot.JPG', alt: 'The Dilli House', title: 'Breathtaking Views', subtitle: 'Perfect For Your Social Profiles' },
   { type: 'image', src: '/kitchen.JPG', alt: 'The Dilli House', title: 'Dine At The Royal Kitchen Of Dilli House', subtitle: 'With Ranging Over From 5 Different Cuisine Styles' },
