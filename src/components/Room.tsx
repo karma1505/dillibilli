@@ -17,7 +17,7 @@ function Room() {
                     <div className="relative z-10 lg:-ml-28 lg:mr-10 p-4 md:p-0">
                         <Image
                             className=" object-cover rounded-lg h-full w-full -mt-8 md:h-auto md:w-72 lg:w-[500px]  md:rounded-lg  shadow-lg"
-                            src="/golden.jpg"
+                            src="/golden.png"
                             alt="Golden Room"
                             width={1180}
                             height={667}
@@ -48,7 +48,7 @@ function Room() {
                     <div className="relative z-10 lg:-mr-28 lg:ml-10 p-4 md:p-0">
                         <Image
                             className="object-cover rounded-lg h-full w-full -mt-8 md:h-auto md:w-72 lg:w-[500px] md:rounded-lg shadow-lg"
-                            src="/silver.jpg"
+                            src="/silver.png"
                             alt="Silver Room"
                             width={1180}
                             height={667}
@@ -63,7 +63,7 @@ function Room() {
                     <div className="relative z-10 lg:-ml-28 lg:mr-10 p-4 md:p-0">
                         <Image
                             className="object-cover rounded-lg h-full w-full -mt-8 md:h-auto md:w-72 lg:w-[500px] md:rounded-lg shadow-lg"
-                            src="/bronze.jpg"
+                            src="/bronze.png"
                             alt="Bronze Room"
                             width={1180}
                             height={667}

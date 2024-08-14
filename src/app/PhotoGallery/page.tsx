@@ -106,26 +106,26 @@ const PhotoGallery: React.FC = () => {
 const sections: Section[] = [
   {
     title: 'Dining Area',
-    images: ['/dining.JPG']
+    images: ['/dining.png']
   },
   {
     title: 'The Golden Bedroom',
     features: ['King Bed', 'Floor Mattresses', 'Linen Bedsheets', 'Jacuzzi', 'Private Pool'],
-    images: ['/golden.jpg', '/goldenjacuzzi.JPG', '/goldenpool.JPG', '/golden2.jpg']
+    images: ['/golden.png', '/goldenjacuzzi.png', '/goldenpool.png', '/golden2.png']
   },
   {
     title: 'The Silver Bedroom',
     features: ['King Bed', 'Study Table', 'Panoramic View', 'Recliner'],
-    images: ['/silver.jpg', '/silver2.jpg', '/silver3.jpg']
+    images: ['/silver.png', '/silver2.png', '/silver3.png']
   },
   {
     title: 'The Bronze Bedroom',
     features: ['King Bed', 'Floor Mattresses', 'Sofa-cum-Bed', 'Private Balcony'],
-    images: ['/bronze.jpg', '/bronze2.jpg', '/bronze3.JPG', '/scb.jpg']
+    images: ['/bronze.png', '/bronze2.png', '/bronze3.png', '/scb.png']
   },
   {
     title: 'Additional Photos',
-    images: ['/tennis.jpg', '/droneshoot.JPG', '/gym.jpg', '/lounge.jpg']
+    images: ['/tennis.png', '/droneshoot.png', '/gym.jpg', '/lounge.png']
   },
 ];
 

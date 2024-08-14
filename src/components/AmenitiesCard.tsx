@@ -6,12 +6,12 @@ import AllAmenitiesPopover from './AllAmenitiesPopover';
 import Image from 'next/image';
 
 const amenities = [
-    { name: 'Private Pool', image: '/goldenpool.JPG' },
-    { name: 'Leather Recliners', image: '/recliner.jpg' },
-    { name: 'Gym', image: '/gym.jpg' },
-    { name: 'Jacuzzi', image: '/goldenjacuzzi.JPG' },
-    { name: 'Indoor Lounge', image: '/lounge.jpg' },
-    { name: 'Kitchen', image: '/dining.jpg' },
+    { name: 'Private Pool', image: '/goldenpool.png' },
+    { name: 'Leather Recliners', image: '/recliner.png' },
+    { name: 'Gym', image: '/gym.png' },
+    { name: 'Jacuzzi', image: '/goldenjacuzzi.png' },
+    { name: 'Indoor Lounge', image: '/lounge.png' },
+    { name: 'Kitchen', image: '/dining.png' },
 ];
 
 const AmenitiesCard = () => {

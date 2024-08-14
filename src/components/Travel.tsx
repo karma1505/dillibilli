@@ -44,24 +44,24 @@ function Travel() {
 
     const cardData = [
         [
-            { src: '/kasuali.jpg', text: 'Kasuali' },
-            { src: '/chail.jpg', text: 'Chail' },
-            { src: '/shimla.jpg', text: 'Shimla' },
+            { src: '/kasuali.png', text: 'Kasuali' },
+            { src: '/chail.png', text: 'Chail' },
+            { src: '/shimla.png', text: 'Shimla' },
         ],
         [
-            { src: '/heritage_park.jpg', text: 'Mohan Meakins Heritage Park' },
-            { src: '/heritage_park2.jpg', text: 'Mohan Meakins Heritage Park' },
-            { src: '/heritage_park3.jpg', text: 'Mohan Meakins Heritage Park' },
+            { src: '/heritage_park.png', text: 'Mohan Meakins Heritage Park' },
+            { src: '/heritage_park2.png', text: 'Mohan Meakins Heritage Park' },
+            { src: '/heritage_park3.png', text: 'Mohan Meakins Heritage Park' },
         ],
         [
-            { src: '/dagshai_jail.jpg', text: 'Dagshai British Jail Museum' },
-            { src: '/dagshai_jail2.jpg', text: 'Dagshai British Jail Museum' },
-            { src: '/dagshai_jail3.jpg', text: 'Dagshai British Jail Museum' },
+            { src: '/dagshai_jail.png', text: 'Dagshai British Jail Museum' },
+            { src: '/dagshai_jail2.png', text: 'Dagshai British Jail Museum' },
+            { src: '/dagshai_jail3.png', text: 'Dagshai British Jail Museum' },
         ],
         [
-            { src: '/sanawar.jpg', text: 'Sanawar' },
-            { src: '/sanawar2.jpg', text: 'Sanawar' },
-            { src: '/sanawar3.jpg', text: 'Sanawar' },
+            { src: '/sanawar.png', text: 'Sanawar' },
+            { src: '/sanawar2.png', text: 'Sanawar' },
+            { src: '/sanawar3.png', text: 'Sanawar' },
         ],
     ];
 

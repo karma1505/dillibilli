@@ -124,24 +124,24 @@ const cards = [
         id: 1,
         content: <SkeletonOne />,
         className: "md:col-span-2",
-        thumbnail: "/bronze.jpg",
+        thumbnail: "/bronze.png",
     },
     {
         id: 2,
         content: <SkeletonTwo />,
         className: "col-span-1 col ",
-        thumbnail: "/bronze3.JPG"
+        thumbnail: "/bronze3.png"
     },
     {
         id: 3,
         content: <SkeletonThree />,
         className: "col-span-1",
-        thumbnail: "/scb.jpg"
+        thumbnail: "/scb.png"
     },
     {
         id: 4,
         content: <SkeletonFour />,
         className: "md:col-span-2",
-        thumbnail: "/bronze2.jpg"
+        thumbnail: "/bronze2.png"
     },
 ];
