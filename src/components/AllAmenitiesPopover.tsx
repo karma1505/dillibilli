@@ -94,10 +94,19 @@ type AllAmenitiesPopoverProps = {
 };
 
 const AllAmenitiesPopover: React.FC<AllAmenitiesPopoverProps> = ({ onClose }) => {
+    const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (e.target === e.currentTarget) {
+            onClose();
+        }
+    };
+
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div 
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" 
+            onClick={handleOverlayClick}
+        >
             <div className="relative bg-white rounded-lg shadow-lg w-11/12 max-w-2xl h-3/5 overflow-y-auto">
-                <div className="absolute top-2 right-2">
+                <div className="sticky top-0 p-4 bg-white">
                     <button
                         onClick={onClose}
                         className="text-gray-500 hover:text-gray-700"
