@@ -1,6 +1,7 @@
 'use client';
 import React, { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
+import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 import '../app/globals.css'; // Ensure correct import path
 
 interface MediaItem {
@@ -18,7 +19,6 @@ const media: MediaItem[] = [
   { type: 'image', src: '/kitchen.png', alt: 'The Dilli House', title: 'Dine At The Royal Kitchen Of Dilli House', subtitle: 'With Ranging Over From 5 Different Cuisine Styles' },
   { type: 'image', src: '/pool2.png', alt: 'The pool view', title: 'The Pool', subtitle: 'Experience The Serene Ambiance Of Our Pool At The Golden Hour.' },
   { type: 'image', src: '/outdoor.png', alt: 'Outdoor Sitting', title: 'Veranda Retreat', subtitle: 'Perfect for BBQ, Music, And Fun Activities.' },
-
 ];
 
 const ImageGallery: React.FC = () => {
@@ -45,7 +45,7 @@ const ImageGallery: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full  mt-20">
+    <div className="relative w-full mt-20">
       <div className="relative overflow-hidden lg:h-[700px] md:h-[500px] h-[300px] bg-black" ref={carouselRef}>
         {media.map((item, index) => (
           <div
@@ -83,14 +83,14 @@ const ImageGallery: React.FC = () => {
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 text-black p-2 rounded-full"
           aria-label="Previous slide"
         >
-          &#9664;
+          <IconChevronLeft size={32} />
         </button>
         <button
           onClick={handleNextSlide}
           className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 text-black p-2 rounded-full"
           aria-label="Next slide"
         >
-          &#9654;
+          <IconChevronRight size={32} />
         </button>
       </div>
       <div className="flex justify-center mt-4">
