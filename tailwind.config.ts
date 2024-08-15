@@ -1,16 +1,7 @@
 import { Cinzel } from 'next/font/google';
-import { PluginAPI } from 'tailwindcss/types/config';
 const flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette").default;
 
 /** @type {import('tailwindcss').Config} */
-
-function addVariablesForColors({ addBase, theme }: PluginAPI) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
-
-}
 module.exports = {
   content: [
     "./node_modules/flowbite/**/*.{js,ts,jsx,tsx}",
@@ -22,21 +13,17 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        shimmer: "shimmer 2s linear infinite",
-        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        fadeInUp: "fadeInUp 1.5s ease-out forwards",
       },
       keyframes: {
-        shimmer: {
-          from: {
-            backgroundPosition: "0 0",
+        fadeInUp: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(100%)',
           },
-          to: {
-            backgroundPosition: "-200% 0",
-          },
-        },
-        scroll: {
-          to: {
-            transform: "translate(calc(-50% - 0.5rem))",
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
           },
         },
       },
@@ -52,7 +39,6 @@ module.exports = {
     },
   },
   plugins: [
-    addVariablesForColors,
     require("tw-elements/plugin.cjs"),
   ],
 };
